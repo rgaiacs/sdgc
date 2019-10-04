@@ -1,0 +1,9 @@
+{% comment %}
+Page title (if set).
+{% endcomment %}
+{% if page.title %}
+<h1>{{page.title}}</h1>
+{% else %}
+{% assign thispage = site.topics | where: "link", page.dir | first %}
+<h1>{{thispage.name}}</h1>
+{% endif %}

@@ -1,0 +1,9 @@
+{% comment %}
+HTML head of all pages.
+{% endcomment %}
+<title>{{page.title}}</title>
+<link href="{{ '/static/site.css' | relative_url }}" rel="stylesheet" type="text/css">
+<link href="{{ '/static/tango.css' | relative_url }}" rel="stylesheet" type="text/css">
+{% for author in site.authors %}
+<meta name="author" content="{{author.name}}">
+{% endfor %}

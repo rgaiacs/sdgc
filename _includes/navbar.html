@@ -1,0 +1,13 @@
+{% comment %}
+Navigation bar at the top of pages.
+{% endcomment %}
+<nav>
+  <div class="left">
+    <a href="{{ '/' | relative_url }}"><img src="{{ '/static/codebender.svg' | relative_url }}" alt = "{{ site.title }}" width="30" /></a>
+    {% unless page.permalink == '/' %}<a href="{{ '/' | relative_url }}">{{ site.title }}</a>{% endunless %}
+  </div>
+  <div class="right">
+    {% include navlist.html title="Topics" collection=site.topics %}
+    {% include navlist.html title="Extras" collection=site.extras %}
+  </div>
+</nav>

@@ -1,0 +1,78 @@
+# General.
+title: "Sex and Drugs and Guns and Code"
+year: 2019
+email: "gvwilson@third-bit.com"
+domain: "https://gvwilson.github.io/sdgc/"
+repo: "https://github.com/gvwilson/sdgc/"
+
+# Lessons.
+topics:
+- name: "FIXME"
+  link: "/fixme/"
+  lede: "FIXME."
+  status: null
+
+# Extra files.
+extras:
+- name: "License"
+  link: "/license/"
+  path: "LICENSE.md"
+- name: "Code of Conduct"
+  link: "/conduct/"
+  path: "CONDUCT.md"
+- name: "Contributing"
+  link: "/contributing/"
+  path: "CONTRIBUTING.md"
+- name: "Authors"
+  link: "/authors/"
+  path: "authors.md"
+- name: "Glossary"
+  link: "/glossary/"
+  path: "glossary.md"
+- name: "References"
+  link: "/references/"
+  path: "references.md"
+- name: "Links"
+  link: "/links/"
+  path: "links.md"
+
+# Contributors.
+authors:
+- name: "Greg Wilson"
+  github: "gvwilson"
+  link: "http://third-bit.com"
+  bio: >
+    Greg has worked for 35 years in both industry and academia,
+    and is the author or editor of several books on computing and two for children.
+    He is best known as the co-founder of <a href="http://carpentries.org">Software Carpentry</a>,
+    a non-profit organization that teaches basic computing skills to researchers,
+    and is now part of the education team at <a href="http://rstudio.com">RStudio</a>.
+
+# External links.
+links:
+- slug: gfm
+  link: https://github.github.com/gfm/
+  name: "GitHub-Flavored Markdown"
+  lede: "Describes the variant of Markdown used in GitHub Pages."
+- slug: github-pages
+  link: https://pages.github.com/
+  name: "GitHub Pages"
+  lede: "A way to publish websites using GitHub-hosted repositories."
+- slug: jekyll
+  link: https://jekyllrb.com/
+  name: "Jekyll"
+  lede: "The Ruby-based tool used to create GitHub Pages sites."
+- slug: marthas-rules
+  link: https://doi.org/10.1177/088610998600100206
+  name: "Martha's Rules"
+  lede: "Guidelines for consensus decision-making in small groups."
+
+# Jekyll settings.
+repository: <USERNAME>/<PROJECT>
+defaults:
+- scope:
+    path: ""
+  values:
+    layout: "page"
+kramdown:
+  toc_levels: "2"
