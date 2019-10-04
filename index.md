@@ -7,6 +7,11 @@ title: "Sex and Drugs and Guns and Code"
 
 FIXME: back story.
 
+See also:
+
+-   [The original tweet][original-tweet].
+-   [What I would organize][what-i-would-organize].
+
 ## Who is this book for?
 
 FIXME: learner personas

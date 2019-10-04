@@ -66,6 +66,14 @@ links:
   link: https://doi.org/10.1177/088610998600100206
   name: "Martha's Rules"
   lede: "Guidelines for consensus decision-making in small groups."
+- slug: original-tweet
+  link: https://twitter.com/gvwilson/status/1179713993381990400
+  name: "Original Tweet"
+  lede: "The tweet that got the ball rolling."
+- slug: what-i-would-organize
+  link: "http://third-bit.com/ideas/#what-i-would-organize-if-i-still-organized-things"
+  name: "What I Would Organize if I Still Organized Things"
+  lede: "Describes a workshop on community organization for programmers."
 
 # Jekyll settings.
 repository: <USERNAME>/<PROJECT>
