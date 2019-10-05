@@ -18,8 +18,6 @@ FIXME: learner personas
 
 ## What does this material cover?
 
-FIXME: content summary
-
 {% include topics.html %}
 
 {% include links.md %}
