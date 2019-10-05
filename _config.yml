@@ -10,9 +10,21 @@ topics:
 - name: "Intellectual Property"
   link: "/ip/"
   lede: "How can people own things that don't exist?"
+- name: "Venture Capital"
+  link: "/vc/"
+  lede: "How can a company that loses billions of dollars a year be worth billions of dollars?"
+- name: "Taxes"
+  link: "/taxes/"
+  lede: "Why do big companies pay less in taxes than small ones?"
 - name: "Dictators"
   link: "/dictators/"
   lede: "How do dictators manage to stay in power?"
+- name: "Discrimination"
+  link: "/discrimination/"
+  lede: "Why does discrimination persist when it is economically inefficient?"
+- name: "Reparations"
+  link: "/reparations/"
+  lede: "What do we owe the dead?"
 
 # Extra files.
 extras:
