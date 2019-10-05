@@ -9,4 +9,5 @@ Page title (if set).
 {% assign thispage = site.extras | where: "link", page.dir | first %}
 {% endunless %}
 <h1>{{thispage.name}}</h1>
+{% if thispage.lede %}<h2 class="lede">{{thispage.lede}}</h2>{% endif %}
 {% endif %}

@@ -10,6 +10,9 @@ topics:
 - name: "Intellectual Property"
   link: "/ip/"
   lede: "How can people own things that don't exist?"
+- name: "Dictators"
+  link: "/dictators/"
+  lede: "How do dictators manage to stay in power?"
 
 # Extra files.
 extras:
