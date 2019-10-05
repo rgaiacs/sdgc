@@ -12,7 +12,7 @@
 /* General */
 
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica;
     padding: 1em;
     width: 60em;
 }
@@ -86,7 +86,6 @@ main {
 /* Table of contents  */
 
 div.toc {
-    background-color: #f8f8f8;
     padding-left: 5px;
     border-radius: 10px;
     border-left: solid 2px;
@@ -119,29 +118,6 @@ img.footer {
 code {
     font-family: Monaco,Courier New;
     font-size: 80%;
-}
-
-div[class^=language] pre.highlight {
-    border-radius: 10px;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-div.highlight {
-    border-radius: 10px;
-}
-
-div.language-js pre.highlight {
-    border-left: solid 2px;
-}
-
-div.language-sh pre.highlight {
-    border-left: solid 2px #1c0092;
-}
-
-div.language-text pre.highlight {
-    border-left: solid 2px #b40000;
 }
 
 /* Definition lists */
@@ -179,22 +155,6 @@ dd p {
     padding: 0;
 }
 
-/* Personas */
-
-div.persona {
-    display: flex;
-}
-
-div.persona img {
-    flex: 10em;
-    height: 8em;
-    padding-top: 0.5em;
-    padding-right: 1em;
-}
-
-div.persona p {
-}
-
 /* Content */
 
 ol, ul {
@@ -218,9 +178,8 @@ th {
 
 td {
     vertical-align: top;
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    padding-bottom: 0.5em;
+    margin: 0.25em;
+    padding: 0.25em;
 }
 
 tr:nth-child(odd) {

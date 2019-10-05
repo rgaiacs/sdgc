@@ -7,10 +7,9 @@ repo: "https://github.com/gvwilson/sdgc/"
 
 # Lessons.
 topics:
-- name: "FIXME"
-  link: "/fixme/"
-  lede: "FIXME."
-  status: null
+- name: "Intellectual Property"
+  link: "/ip/"
+  lede: "How can people own things that don't exist?"
 
 # Extra files.
 extras:

@@ -1,6 +1,5 @@
 ---
 permalink: "/glossary/"
-title: "Glossary"
 ---
 
 {:auto_ids}

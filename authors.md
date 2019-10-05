@@ -1,6 +1,5 @@
 ---
 permalink: "/authors/"
-title: "Authors"
 ---
 
 {% for person in site.authors %}

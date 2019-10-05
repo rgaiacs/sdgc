@@ -20,8 +20,6 @@ FIXME: learner personas
 
 FIXME: content summary
 
-## Topics
-
 {% include topics.html %}
 
 {% include links.md %}

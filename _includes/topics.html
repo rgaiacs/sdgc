@@ -1,14 +1,5 @@
-{% comment %}
-A table showing topics with summaries and status.
-{% endcomment %}
 <table>
-<tr><th></th><th>Title</th><th>Summary</th><th>Status</th></tr>
-{%- for item in site.topics -%}
-<tr>
-  <td align="right">{{forloop.index}}.</td>
-  <td>{% include navlink.html text=item.name link=item.link permalink=page.permalink -%}</td>
-  <td>{{item.lede}}</td>
-  <td>{% if item.status %}{{item.status}}{% endif %}</td>
-</tr>
-{% endfor -%}
+  {% for topic in site.topics %}
+  <tr><td><a href="{{topic.link|relative_url}}">{{topic.name}}</a></td><td>{{topic.lede}}</td></tr>
+  {% endfor %}
 </table>

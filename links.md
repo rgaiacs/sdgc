@@ -1,6 +1,5 @@
 ---
 permalink: "/links/"
-title: "Links"
 ---
 
 <table>

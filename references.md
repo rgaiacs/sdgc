@@ -1,6 +1,5 @@
 ---
 permalink: "/references/"
-title: "References"
 ---
 
 {:auto_ids}
