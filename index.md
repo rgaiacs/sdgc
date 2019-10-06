@@ -11,6 +11,7 @@ See also:
 
 -   [The original tweet][original-tweet].
 -   [What I would organize][what-i-would-organize].
+-   [*Data Feminism*](https://mitpress.mit.edu/books/data-feminism)
 
 ## Who is this book for?
 
