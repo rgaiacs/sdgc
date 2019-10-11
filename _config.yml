@@ -22,6 +22,9 @@ topics:
 - link: "/planning/"
   name: "Central Planning"
   lede: "If central planning is inefficient, why do all successful companies use it?"
+- link: "/class/"
+  name: "Class"
+  lede: "What the hell do people mean by 'class'?"
 - link: "/dictators/"
   name: "Dictators"
   lede: "How do dictators manage to stay in power?"
@@ -42,7 +45,7 @@ topics:
   lede: "Why does the United States put more people in prison than other countries?"
 - link: "/reparations/"
   name: "Reparations"
-  lede: "What do we owe the dead and future generations?"
+  lede: "What do we owe to the dead and and to future generations?"
 
 # Extra files.
 extras:
