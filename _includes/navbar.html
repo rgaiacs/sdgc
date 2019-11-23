@@ -6,7 +6,8 @@ Navigation bar at the top of pages.
     {% unless page.permalink == '/' %}<a href="{{ '/' | relative_url }}">{{ site.title }}</a>{% endunless %}
   </div>
   <div class="right">
-    {% include navlist.html title="Topics" collection=site.topics %}
-    {% include navlist.html title="Extras" collection=site.extras %}
+    {% include toc.html %}
+    {% include navlist.html title="Lessons" collection=site.data.lessons %}
+    {% include navlist.html title="Extras" collection=site.data.extras %}
   </div>
 </nav>

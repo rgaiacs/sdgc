@@ -1,0 +1,29 @@
+# Extra files.
+
+- name: "License"
+  link: "/license/"
+  path: "LICENSE.md"
+
+- name: "Code of Conduct"
+  link: "/conduct/"
+  path: "CONDUCT.md"
+
+- name: "Contributing"
+  link: "/contributing/"
+  path: "CONTRIBUTING.md"
+
+- name: "References"
+  link: "/references/"
+  path: "references.md"
+
+- name: "Authors"
+  link: "/authors/"
+  path: "authors.md"
+
+- name: "Glossary"
+  link: "/glossary/"
+  path: "glossary.md"
+
+- name: "Links"
+  link: "/links/"
+  path: "links.md"

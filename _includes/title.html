@@ -4,9 +4,9 @@ Page title (if set).
 {% if page.title %}
 <h1>{{page.title}}</h1>
 {% else %}
-{% assign thispage = site.topics | where: "link", page.dir | first %}
+{% assign thispage = site.data.lessons | where: "link", page.dir | first %}
 {% unless thispage %}
-{% assign thispage = site.extras | where: "link", page.dir | first %}
+{% assign thispage = site.data.extras | where: "link", page.dir | first %}
 {% endunless %}
 <h1>{{thispage.name}}</h1>
 {% if thispage.lede %}<h2 class="lede">{{thispage.lede}}</h2>{% endif %}

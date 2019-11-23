@@ -1,5 +1,5 @@
 <table>
-  {% for topic in site.topics %}
-  <tr><td><a href="{{topic.link|relative_url}}">{{topic.name}}</a></td><td>{{topic.lede}}</td></tr>
+  {% for lesson in site.data.lessons %}
+  <tr><td><a href="{{lesson.link|relative_url}}">{{lesson.name}}</a></td><td>{{lesson.lede}}</td></tr>
   {% endfor %}
 </table>

@@ -1,9 +1,8 @@
 ---
 permalink: "/"
 title: "Sex and Drugs and Guns and Code"
+rootpath: "."
 ---
-
-{% include toc.md %}
 
 FIXME: back story.
 
@@ -20,5 +19,9 @@ FIXME: learner personas
 ## What does this material cover?
 
 {% include topics.html %}
+
+## Acknowledgments
+
+FIXME: who to thank
 
 {% include links.md %}

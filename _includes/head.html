@@ -4,6 +4,7 @@ HTML head of all pages.
 <title>{{page.title}}</title>
 <link href="{{ '/static/site.css' | relative_url }}" rel="stylesheet" type="text/css">
 <link href="{{ '/static/tango.css' | relative_url }}" rel="stylesheet" type="text/css">
-{% for author in site.authors %}
+{% include mathjax.html %}
+{% for author in site.data.authors %}
 <meta name="author" content="{{author.name}}">
 {% endfor %}

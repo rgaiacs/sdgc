@@ -1,114 +1,9 @@
 # General.
 title: "Sex and Drugs and Guns and Code"
-year: 2019
+year: 2020
 email: "gvwilson@third-bit.com"
 domain: "https://gvwilson.github.io/sdgc/"
 repo: "https://github.com/gvwilson/sdgc/"
-
-# Lessons.
-topics:
-- link: "/ip/"
-  name: "Intellectual Property"
-  lede: "How can people own things that don't exist?"
-- link: "/vc/"
-  name: "Venture Capital"
-  lede: "How can a company that loses billions of dollars a year be worth billions of dollars?"
-- link: "/taxes/"
-  name: "Taxes"
-  lede: "Why do big companies pay less in taxes than small ones?"
-- link: "/disinfo/"
-  name: "Disinformation"
-  lede: "Why do so many people believe things that aren't true?"
-- link: "/planning/"
-  name: "Central Planning"
-  lede: "If central planning is inefficient, why do all successful companies use it?"
-- link: "/class/"
-  name: "Class"
-  lede: "What the hell do people mean by 'class'?"
-- link: "/dictators/"
-  name: "Dictators"
-  lede: "How do dictators manage to stay in power?"
-- link: "/rights/"
-  name: "Rights"
-  lede: "How do we decide what is a right and what isn't?"
-- link: "/discrimination/"
-  name: "Discrimination"
-  lede: "Why does discrimination persist when it is economically inefficient?"
-- link: "/sexwork/"
-  name: "Sex Work"
-  lede: "Why has sex work been both ubiquitous and illegal?"
-- link: "/drugs/"
-  name: "Drugs"
-  lede: "Why have some drugs been illegal and others not?"
-- link: "/prison/"
-  name: "Prison"
-  lede: "Why does the United States put more people in prison than other countries?"
-- link: "/reparations/"
-  name: "Reparations"
-  lede: "What do we owe to the dead and and to future generations?"
-
-# Extra files.
-extras:
-- name: "License"
-  link: "/license/"
-  path: "LICENSE.md"
-- name: "Code of Conduct"
-  link: "/conduct/"
-  path: "CONDUCT.md"
-- name: "Contributing"
-  link: "/contributing/"
-  path: "CONTRIBUTING.md"
-- name: "Authors"
-  link: "/authors/"
-  path: "authors.md"
-- name: "Glossary"
-  link: "/glossary/"
-  path: "glossary.md"
-- name: "References"
-  link: "/references/"
-  path: "references.md"
-- name: "Links"
-  link: "/links/"
-  path: "links.md"
-
-# Contributors.
-authors:
-- name: "Greg Wilson"
-  github: "gvwilson"
-  link: "http://third-bit.com"
-  bio: >
-    Greg has worked for 35 years in both industry and academia,
-    and is the author or editor of several books on computing and two for children.
-    He is best known as the co-founder of <a href="http://carpentries.org">Software Carpentry</a>,
-    a non-profit organization that teaches basic computing skills to researchers,
-    and is now part of the education team at <a href="http://rstudio.com">RStudio</a>.
-
-# External links.
-links:
-- slug: gfm
-  link: https://github.github.com/gfm/
-  name: "GitHub-Flavored Markdown"
-  lede: "Describes the variant of Markdown used in GitHub Pages."
-- slug: github-pages
-  link: https://pages.github.com/
-  name: "GitHub Pages"
-  lede: "A way to publish websites using GitHub-hosted repositories."
-- slug: jekyll
-  link: https://jekyllrb.com/
-  name: "Jekyll"
-  lede: "The Ruby-based tool used to create GitHub Pages sites."
-- slug: marthas-rules
-  link: https://doi.org/10.1177/088610998600100206
-  name: "Martha's Rules"
-  lede: "Guidelines for consensus decision-making in small groups."
-- slug: original-tweet
-  link: https://twitter.com/gvwilson/status/1179713993381990400
-  name: "Original Tweet"
-  lede: "The tweet that got the ball rolling."
-- slug: what-i-would-organize
-  link: "http://third-bit.com/ideas/#what-i-would-organize-if-i-still-organized-things"
-  name: "What I Would Organize if I Still Organized Things"
-  lede: "Describes a workshop on community organization for programmers."
 
 # Jekyll settings.
 repository: <USERNAME>/<PROJECT>
@@ -119,3 +14,7 @@ defaults:
     layout: "page"
 kramdown:
   toc_levels: "2"
+exclude:
+- "*.Rmd"
+- "Makefile"
+- "README.md"

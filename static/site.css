@@ -4,6 +4,7 @@ body {
     font-family: "Helvetica Neue", Helvetica;
     padding: 1em;
     width: 60em;
+    font-size: 18px;
 }
 
 /* Navigation header */
@@ -12,10 +13,8 @@ nav {
     position: fixed;
     top: 0;
     width: 60em;
-    background-color: #f8f8f8;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 5px;
+    background-color: #f0f0f0;
+    padding: 10px;
 }
 
 nav div.left {
@@ -67,32 +66,17 @@ main {
     margin-top: 1em;
 }
 
-/* Table of contents  */
-
-div.toc {
-    padding-left: 5px;
-}
-
-div.toc h3 {
-    padding-top: 5px;
-    margin-bottom: 0px;
-}
-
-div.toc ul {
-    margin-top: 0.25em;
-    padding-bottom: 10px;
-}
-
 /* Footer */
 
 footer {
+    background-color: #f0f0f0;
+    padding: 10px;
     text-align: center;
 }
 
 img.footer {
     vertical-align: middle;
     height: 2em;
-    padding: 0.25em;
 }
 
 /* Definition lists */
@@ -102,27 +86,11 @@ dl {
 }
 
 dt {
-    clear: left;
-    float: left;
-    margin-left: -1em;
-    margin-right: 0.25em;
     font-weight: bold;
 }
 
-dt::before {
-    content: "";
-    display: block;
-    height: 0.25em;
-}
-
-dd::before {
-    content: "";
-    display: block;
-    height: 0.25em;
-}
-
 dd {
-    margin-left: 0em;
+    margin-left: 2em;
 }
 
 dd p {
@@ -155,6 +123,12 @@ ol, ul {
 
 ul {
     list-style-type: disc;
+}
+
+/* Figures */
+
+figure {
+    text-align:center;
 }
 
 /* Tables */

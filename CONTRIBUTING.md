@@ -3,8 +3,6 @@ permalink: "/contributing/"
 title: "Contributing"
 ---
 
-{% include toc.md %}
-
 ## Making Decisions
 
 This project uses Martha's Rules for consensus decision making [Mina1986](BIB):
@@ -63,25 +61,15 @@ This project uses Martha's Rules for consensus decision making [Mina1986](BIB):
 1.  We use [Jekyll][jekyll] to create a [GitHub Pages][github-pages] site for this project,
     so please write in [GitHub-Flavored Markdown][gfm].
 
-1.  Each lesson is in a file `./slug.md`,
-    where "slug" is a hyphenated short name for the topic (e.g., `implicit-bias.md`).
-    `./_config.yml` contains an entry for each lesson under the key `topics`.
-    Please ensure that the lesson title in `./_config.yml`
-    and the `title` field in the YAML header of `./slug.md` are consistent:
-    there is unfortunately no simple way to do this in Jekyll.
+1.  Each lesson is in a file `./slug/index.md`,
+    where "slug" is a hyphenated short name for the topic (e.g., `package-size`).
+    `data/lessons.yml` contains an entry for each lesson;
+    the `link` field in the entry
+    and the `permalink` field in the YAML header of `./slug/index.md`
+    must be consistent.
 
 1.  Use relative links `{% raw %}[like this](../slug/){% endraw %}`
     to refer from one lesson to another.
-
-1.  Put definitions of external links in the `links` table in `_config.yml`
-    and refer to them using `{% raw %}[text to display][link-key]{% endraw %}`.
-    (Links cannot be included in the page template `_layouts/page.html`
-    because of the order in which Jekyll does link expansion and file inclusion,
-    so every page must `{% raw %}{% include links.md %}{% endraw %}` as its last line.)
-
-1.  For similar reasons,
-    each `./slug.md` file should open with `{% raw %}{% include toc.md %}{% endraw %}`
-    to create a table of contents.
 
 1.  Use level-2 headings for sub-topics, and phrase these as questions
     (e.g., "How do I check if a file exists?").
@@ -89,17 +77,56 @@ This project uses Martha's Rules for consensus decision making [Mina1986](BIB):
 1.  Place the exercises for each sub-topic at the end of that sub-topic
     and give each its own level-3 heading.
 
-1.  Put definitions of terms in `./glossary.md`
-    and link to them using `{% raw %}[some text](../glossary/#term-key){% endraw %}`.
-    Jekyll automatically generates a lower-case hyphenated key for each term from the definition text,
-    so "this term" has the HTML ID `this-term`.
+1.  Put definitions of external links in the `links` table in `_data/links.yml`
+    and refer to them using `{% raw %}[text to display][link-key]{% endraw %}`.
+    (We cannot put this in the page template
+    because of the order in which Jekyll does link expansion and file inclusion.)
+    Entries should be in alphabetical order by slug and each should look like this:
+
+    ```
+    - slug: gfm
+      link: https://github.github.com/gfm/
+      name: "GitHub-Flavored Markdown"
+      lede: "Describes the variant of Markdown used in GitHub Pages."
+    ```
+
+1.  When defining a term,
+    use `{% raw %}[some text][some-key]{% endraw %}` in the text
+    and add an entry like this to the table in `_data/glossary.yml`
+    (in alphabetical order by term):
+
+    ```
+    - term: "data science"
+      slug: data-science
+      defn: |
+        Statistics, but less rigorous and better paid.
+    ```
+
+    If a `link` field is present in the YAML,
+    the term name will be wrapped in that link.
+    If an `acronym` field is present,
+    the acronym will be included after the term name.
 
 1.  Use `{% raw %}[Key1,Key2](BIB){% endraw %}` for bibliographic citations;
     the code in `static/site.js` (which is automatically included and run in each page's footer)
     will convert these to links to appropriate entries in `references.md`.
 
-1.  All descriptions will use first person plural ("we" rather than "you"),
+1.  Do not update `references.md` manually.
+    Instead,
+    use `bin/bib2md.py` to regenerate it from `references.bib`.
+
+1.  Use the following to include external figures:
+
+    ```
+    {% raw %}{% include figure.html id="f:slug:stem" src="figures/stem.svg" caption="Caption" %}{% endraw %}
+    ```
+
+    where `slug` is the lesson slug and `stem` is the stem of the filename,
+    and use `{% raw %}[f:slug:stem](FIG){% endraw %}` to refer to the figure.
+
+1.  Use first person plural ("we" rather than "you"),
     Simplified English (i.e., American spelling),
+    dashes instead of underscores,
     and the Oxford comma.
 
 {% include links.md %}

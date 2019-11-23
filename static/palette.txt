@@ -1,8 +1,0 @@
-The color palette is taken from classic Canadian stamps of the mid-1950s.
-Please see static/stamps-1954.jpg for images.
-orange #fb3800: (251, 56, 0)
-blue #1c0092: (28, 0, 146)
-purple #070223: (7, 2, 35)
-red #b40000: (180, 0, 0)
-green #003a06: (0, 58, 6)
-brown #1d0b00: (29, 11, 0)

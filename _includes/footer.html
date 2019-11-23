@@ -2,11 +2,9 @@
 Page footer.
 {% endcomment %}
 <footer>
-  <p>
-    <a href="{{ '/license/' | relative_url }}"><img class="footer" src="{{ '/static/cc-by.svg' | relative_url }}" alt="License" /></a>
-    <a href="{{ site.repo }}"><img class="footer" src="{{ '/static/github.svg' | relative_url }}" alt="Repository" /></a>
-    <br/>
-    © {{ site.year }} <a href="{{ '/authors/' | relative_url }}">The Authors</a>
-  </p>
+  <a href="{{ '/license/' | relative_url }}"><img class="footer" src="{{ '/static/cc-by.svg' | relative_url }}" alt="License" /></a>
+  <a href="{{ site.repo }}"><img class="footer" src="{{ '/static/github.svg' | relative_url }}" alt="Repository" /></a>
+  <br/>
+  © {{ site.year }} <a href="{{ '/authors/' | relative_url }}">The Authors</a>
 </footer>
 <script src="{{'/static/site.js'|relative_url}}"></script>
