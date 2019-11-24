@@ -12,10 +12,6 @@
   link: "/contributing/"
   path: "CONTRIBUTING.md"
 
-- name: "References"
-  link: "/references/"
-  path: "references.md"
-
 - name: "Authors"
   link: "/authors/"
   path: "authors.md"
@@ -23,6 +19,10 @@
 - name: "Glossary"
   link: "/glossary/"
   path: "glossary.md"
+
+- name: "References"
+  link: "/references/"
+  path: "references.md"
 
 - name: "Links"
   link: "/links/"

@@ -1,3 +1,5 @@
+include _config.mk
+
 LESSONS=$(wildcard */index.md)
 EXTRAS=$(wildcard *.md) $(wildcard extras/*.md)
 SOURCE=${LESSONS} ${EXTRAS}
@@ -25,6 +27,13 @@ bib:
 
 ## ----------------------------------------
 
+## config   : Regenerate configuration file.
+config: bin/makeconfig.py etc/config.template _config.mk
+	@bin/makeconfig.py \
+	title=${TITLE} year=${YEAR} email=${EMAIL} domain=${DOMAIN} repo=${REPO} excludes='${EXCLUDES}' \
+	< etc/config.template \
+	> _config.yml
+
 ## links    : Check that all links resolve.
 links:
 	bin/checklinks.py _data/links.yml _data/glossary.yml *.md extras/*.md */index.md _data/*.yml
@@ -34,8 +43,30 @@ clean:
 	rm -rf $$(cat .gitignore)
 	find . -name '*~' -exec rm {} \;
 
+## release  : Create release of template.
+release : clean
+	@tar zcvf release.tar.gz \
+	CONDUCT.md \
+	CONTRIBUTING.md \
+	LICENSE.md \
+	Makefile \
+	_includes \
+	_layouts \
+	bin \
+	etc/config.template \
+	favicon.ico \
+	static \
+	_data/extras.yml \
+	.gitignore
+
 ## settings : Show values of variables.
 settings :
+	@echo TITLE: ${TITLE}
+	@echo YEAR: ${YEAR}
+	@echo EMAIL: ${EMAIL}
+	@echo DOMAIN: ${DOMAIN}
+	@echo REPO: ${REPO}
+	@echo EXCLUDES: ${EXCLUDES}
 	@echo LESSONS: ${LESSONS}
 	@echo EXTRAS: ${EXTRAS}
 	@echo SOURCE: ${SOURCE}

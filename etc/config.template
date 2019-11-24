@@ -1,9 +1,9 @@
 # General.
-title: "Sex and Drugs and Guns and Code"
-year: 2020
-email: "gvwilson@third-bit.com"
-domain: "https://gvwilson.github.io/sdgc/"
-repo: "https://github.com/gvwilson/sdgc/"
+title: "{title}"
+year: {year}
+email: "{email}"
+domain: "{domain}"
+repo: "{repo}"
 
 # Jekyll settings.
 repository: <USERNAME>/<PROJECT>
@@ -20,3 +20,4 @@ exclude:
 - "README.md"
 - "bin"
 - "etc"
+{excludes}
