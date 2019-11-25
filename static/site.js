@@ -1,12 +1,19 @@
 // Create table of contents.
 const createToc = () => {
-  const nodes = Array.from(document.querySelectorAll('h2'))
-  const text = nodes
-        .filter(node => !node.classList.contains('lede'))
-        .map(node => `<a href="#${node.id}"><span class="nowrap">${node.textContent}</span></a>`)
-        .join('<br/>')
   const div = document.querySelector('div#toc')
-  div.innerHTML = text
+  const nodes = Array.from(document.querySelectorAll('h2'))
+        .filter(node => !node.classList.contains('lede'))
+  console.log('NODES', nodes.length)
+  if (! nodes.length) {
+    div.classList.remove('dropdown-content')
+    div.parentNode.classList.add('disabled')
+  }
+  else {
+    const text = nodes
+          .map(node => `<a href="#${node.id}"><span class="nowrap">${node.textContent}</span></a>`)
+          .join('<br/>')
+    div.innerHTML = text
+  }
 }
 
 // Convert bibliography citation links.

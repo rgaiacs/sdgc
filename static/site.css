@@ -60,6 +60,11 @@ span.navtitle {
     white-space: nowrap;
 }
 
+.disabled {
+    color: #a0a0a0;
+    font-style: italic;
+}
+
 /* Main content */
 
 main {
