@@ -176,7 +176,7 @@ HANDLERS = {
         _key, SEPARATOR,
         _authors, ':', REINDENT,
         _papertitle, '.', REINDENT,
-        _howpublished, _details, (', ', _doi), '.', REINDENT,
+        _howpublished, (', ', _details), (', ', _doi), '.', REINDENT,
         _note
     ]
 }

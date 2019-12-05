@@ -3,7 +3,6 @@ const createToc = () => {
   const div = document.querySelector('div#toc')
   const nodes = Array.from(document.querySelectorAll('h2'))
         .filter(node => !node.classList.contains('lede'))
-  console.log('NODES', nodes.length)
   if (! nodes.length) {
     div.classList.remove('dropdown-content')
     div.parentNode.classList.add('disabled')
@@ -18,12 +17,10 @@ const createToc = () => {
 
 // Convert bibliography citation links.
 const fixBibRefs = () => {
-  const bibStem = window.location.pathname
-        .split('/')
-        .filter(s => s.length > 0)
-        .map(s => '..')
-        .join('/')
-        + '/references/#'
+  const rootpath = document
+        .querySelector('meta[name=rootpath]')
+        .getAttribute('content')
+  const bibStem = `${rootpath}/references/#`
   Array.from(document.querySelectorAll('a[href=BIB]'))
     .forEach(node => {
       const cites = node.textContent

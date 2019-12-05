@@ -3,10 +3,11 @@ HTML head of all pages.
 {% endcomment %}
 {% include title_lede.md %}
 <title>{{the_title}}</title>
-<link href="{{ '/static/site.css' | relative_url }}" rel="stylesheet" type="text/css">
 <link href="{{ '/static/tango.css' | relative_url }}" rel="stylesheet" type="text/css">
+<link href="{{ '/static/site.css' | relative_url }}" rel="stylesheet" type="text/css">
 <link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | absolute_url }}">
 {% include mathjax.html %}
 {% for author in site.data.authors %}
 <meta name="author" content="{{author.name}}">
 {% endfor %}
+<meta name="rootpath" content="{% if page.rootpath %}{{page.rootpath}}{% else %}..{% endif %}">

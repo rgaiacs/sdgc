@@ -40,6 +40,7 @@ links:
 
 ## clean    : Clean up stray files.
 clean:
+	rm -rf _site
 	rm -rf $$(cat .gitignore)
 	find . -name '*~' -exec rm {} \;
 
@@ -56,7 +57,7 @@ release : clean
 	etc/config.template \
 	favicon.ico \
 	static \
-	_data/extras.yml \
+	_data/standards.yml \
 	.gitignore
 
 ## settings : Show values of variables.

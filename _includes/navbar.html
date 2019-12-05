@@ -8,6 +8,8 @@ Navigation bar at the top of pages.
   <div class="right">
     {% include toc.html %}
     {% include navlist.html title="Lessons" collection=site.data.lessons %}
-    {% include navlist.html title="Extras" collection=site.data.extras %}
+    {% assign others = site.data.standards %}
+    {% if site.data.extras %}{% assign others = others | concat: site.data.extras %}{% endif %}
+    {% include navlist.html title="Extras" collection=others %}
   </div>
 </nav>

@@ -68,6 +68,10 @@ This project uses Martha's Rules for consensus decision making [Mina1986](BIB):
     and the `permalink` field in the YAML header of `./slug/index.md`
     must be consistent.
 
+1.  Appendices are in two places:
+    `standards` for files that are part of the template
+    and `extras` for everything specific to the lesson.
+
 1.  Use relative links `{% raw %}[like this](../slug/){% endraw %}`
     to refer from one lesson to another.
 
