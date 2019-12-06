@@ -71,6 +71,14 @@ main {
     margin-top: 1em;
 }
 
+div.subtitle {
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-style: italic;
+    background-image: linear-gradient(to left, #ffffff, #e0f0f0);
+}
+
 div.author::after {
     content: "";
     clear: both;

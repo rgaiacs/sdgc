@@ -4,11 +4,9 @@ title: "Sex and Drugs and Guns and Code"
 rootpath: "."
 ---
 
+{% include subtitle.html %}
+
 FIXME: back story.
-
-See also:
-
--   [*Data Feminism*](https://mitpress.mit.edu/books/data-feminism)
 
 ## Who is this book for?
 

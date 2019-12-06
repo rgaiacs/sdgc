@@ -1,0 +1,8 @@
+<div class="subtitle">
+  <p>
+    {% for line in site.subtitle %}
+    {{line}}
+    {% unless loop.last %}<br/>{% endunless %}
+    {% endfor %}
+  </p>
+</div>
