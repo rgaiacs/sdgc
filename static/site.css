@@ -15,6 +15,7 @@ nav {
     width: 60em;
     padding: 10px;
     background-image: linear-gradient(to bottom, #e0f0f0, #ffffff);
+    z-index: 1000; /* To be on top of MathJax */
 }
 
 nav div.left {
